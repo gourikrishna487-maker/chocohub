@@ -1,0 +1,328 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | ChocoNest</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fffaf5;
+            color: #492418;
+        }
+
+        /* Header */
+        header {
+            background: #4b241b;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffd9a0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #ffd9a0;
+        }
+
+        /* Page Banner */
+        .banner {
+            text-align: center;
+            padding: 65px 20px;
+            background: linear-gradient(120deg, #fff0df, #f0c8a5);
+        }
+
+        .banner h1 {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .banner h1 span {
+            color: #a45b36;
+        }
+
+        .banner p {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        /* Products Section */
+        .products-section {
+            padding: 55px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-family: Georgia, serif;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #86675b;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 18px rgba(75, 36, 27, 0.12);
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .product-image {
+            height: 170px;
+            background: #f8e5d2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 75px;
+        }
+
+        .product-info {
+            padding: 22px;
+        }
+
+        .product-info h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            color: #86675b;
+            line-height: 1.6;
+            min-height: 50px;
+            margin-bottom: 12px;
+        }
+
+        .price {
+            font-size: 21px;
+            font-weight: bold;
+            color: #a44b20;
+            margin-bottom: 18px;
+        }
+
+        .order-btn {
+            display: inline-block;
+            background: #6b3525;
+            color: white;
+            text-decoration: none;
+            padding: 11px 22px;
+            border-radius: 25px;
+        }
+
+        .order-btn:hover {
+            background: #a45b36;
+        }
+
+        /* Footer */
+        footer {
+            background: #4b241b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            line-height: 1.8;
+        }
+
+        footer span {
+            color: #ffd9a0;
+        }
+
+        /* Mobile Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                text-align: center;
+                line-height: 2.5;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .banner h1 {
+                font-size: 32px;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">🍫 ChocoNest</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Our Products</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Products Banner -->
+    <section class="banner">
+        <h1>Our Sweet <span>Collection</span> 🍫</h1>
+        <p>
+            Discover your favourite homemade chocolates.<br>
+            Every bite is made with care and love!
+        </p>
+    </section>
+
+    <!-- Products List -->
+    <section class="products-section">
+
+        <div class="section-title">
+            <h2>Explore Our Products</h2>
+            <p>Find the perfect chocolate for every occasion ❤️</p>
+        </div>
+
+        <div class="products">
+
+            <div class="product-card">
+                <div class="product-image">🍫</div>
+                <div class="product-info">
+                    <h3>Dark Chocolate</h3>
+                    <p>Rich cocoa flavour for dark chocolate lovers.</p>
+                    <div class="price">₹149 / box</div>
+                    <a class="order-btn" href="index.html#contact">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍬</div>
+                <div class="product-info">
+                    <h3>Milk Chocolate</h3>
+                    <p>Creamy, smooth and delicious homemade chocolate.</p>
+                    <div class="price">₹129 / box</div>
+                    <a class="order-btn" href="index.html#contact">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍓</div>
+                <div class="product-info">
+                    <h3>Chocolate Bites</h3>
+                    <p>Small chocolate treats for your sweet cravings.</p>
+                    <div class="price">₹199 / box</div>
+                    <a class="order-btn" href="index.html#contact">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🥜</div>
+                <div class="product-info">
+                    <h3>Nutty Chocolates</h3>
+                    <p>Delicious chocolates filled with crunchy nuts.</p>
+                    <div class="price">₹179 / box</div>
+                    <a class="order-btn" href="index.html#contact">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍪</div>
+                <div class="product-info">
+                    <h3>Chocolate Cookies</h3>
+                    <p>Sweet homemade cookies with chocolate flavour.</p>
+                    <div class="price">₹159 / box</div>
+                    <a class="order-btn" href="index.html#contact">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🎁</div>
+                <div class="product-info">
+                    <h3>Chocolate Gift Box</h3>
+                    <p>A beautiful assortment for birthdays and celebrations.</p>
+                    <div class="price">₹299 / box</div>
+                    <a class="order-btn" href="index.html#contact">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🤎</div>
+                <div class="product-info">
+                    <h3>White Chocolate</h3>
+                    <p>A sweet and creamy treat for every occasion.</p>
+                    <div class="price">₹169 / box</div>
+                    <a class="order-btn" href="index.html#contact">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍰</div>
+                <div class="product-info">
+                    <h3>Chocolate Brownies</h3>
+                    <p>Soft, rich chocolate brownies for dessert lovers.</p>
+                    <div class="price">₹249 / box</div>
+                    <a class="order-btn" href="index.html#contact">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">💝</div>
+                <div class="product-info">
+                    <h3>Custom Chocolate Box</h3>
+                    <p>Special chocolate gifts prepared for your occasions.</p>
+                    <div class="price">From ₹349</div>
+                    <a class="order-btn" href="index.html#contact">Order Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>🍫 <span>ChocoNest</span> – Homemade with Love</p>
+        <p>Sweet Moments, Beautiful Memories ❤️</p>
+        <p>&copy; 2026 ChocoNest. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
